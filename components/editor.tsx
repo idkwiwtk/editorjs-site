@@ -21,10 +21,10 @@ const Editor = ({ data, holder = "editor-holder", onChange }: Props) => {
     tools: {
       header: {
         class: Header,
+        inlineToolbar: true,
         config: {
-          placeholder: "Enter a header",
-          levels: [1, 2, 3, 4, 5],
           defaultLevel: 1,
+          levels: [1, 2, 3],
         },
       },
       code: CodeTool,
